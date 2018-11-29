@@ -24,9 +24,9 @@ const LandingPage = () => (
           </div>
         </nav>
       </div>
-      {/*end container*/}
+      {/* end container */}
     </div>
-    {/*end navbar*/}
+    {/* end navbar */}
   </div>
   <section className="py-5">
     <div className="shelter">
@@ -41,9 +41,9 @@ const LandingPage = () => (
         <div className=" column ">
           <div className="flex ">
             <p className="text-format ">
-              {" "}
+              {' '}
               It's Personal, express yourself with pictures or word..<br
-              />{" "}
+              />{' '}
               Ready to start writing? Sign up now!
             </p>
             <a href="signup.html ">
@@ -54,7 +54,7 @@ const LandingPage = () => (
           </div>
         </div>
       </div>
-      {/*end row*/}
+      {/* end row */}
       <div className="row ">
         <div className="column ">
           <div className="flex ">
@@ -77,7 +77,7 @@ const LandingPage = () => (
           />
         </div>
       </div>
-      {/*end row*/}
+      {/* end row */}
     </div>
   </section>
   <section className="py-5">
@@ -97,7 +97,7 @@ const LandingPage = () => (
               private by default!.
             </p>
           </div>
-          {/*end card*/}
+          {/* end card */}
         </div>
         <div className="column">
           <div className="card">
@@ -112,7 +112,7 @@ const LandingPage = () => (
               forget to write.
             </p>
           </div>
-          {/*end card*/}
+          {/* end card */}
         </div>
         <div className="column">
           <div className="card">
@@ -127,7 +127,7 @@ const LandingPage = () => (
               backgrounds, and fonts..
             </p>
           </div>
-          {/*end card*/}
+          {/* end card */}
         </div>
       </div>
     </div>
@@ -149,13 +149,13 @@ const LandingPage = () => (
           </div>
         </nav>
       </div>
-      {/*end shelter*/}
+      {/* end shelter */}
     </div>
-    {/*end navbar*/}
+    {/* end navbar */}
   </section>
 </div>
 
   </Fragment>
-)
+);
 
 export default LandingPage;
