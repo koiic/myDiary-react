@@ -13,7 +13,14 @@ const initialState = {
     isAuth: false,
     user: {}
   },
-  entries: {}
+  publishedEntries: {
+    entry: {},
+    error: '',
+    processing: false,
+    isCreated: false,
+    entries: [],
+    fetched: false
+  }
 
 };
 export default initialState;

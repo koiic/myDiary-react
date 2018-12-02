@@ -3,6 +3,7 @@ import '../index.css';
 import { connect } from 'react-redux';
 import Header from './Header';
 
+
 /**
  * @param {object} props
  * @desc renders login page
@@ -152,6 +153,7 @@ const mapStateToProps = state => ({
   auth: state.authReducer
 });
 
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
 )(LandingPage);

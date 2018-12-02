@@ -9,6 +9,7 @@ import AppRouter from './app/routers';
 
 // helpers
 import Auth from './helper/tokenCheck';
+// import setAuthToken from './helper/authToken';
 import { authenticateUser, logOutUser } from './auth/authActions';
 
 
@@ -23,6 +24,12 @@ if (checker) {
   reduxStore.dispatch(logOutUser());
 }
 
+// if (localStorage.userToken) {
+//   // setting token to request headers for authentication
+//   setAuthToken(localStorage.token);
+//   // adding user object to User's store
+//   reduxStore.dispatch(asyncActions(LOG_IN).success(jwtDecode(localStorage.userToken)));
+// }
 
 const wrapper = document.getElementById('root');
 ReactDOM.render(
