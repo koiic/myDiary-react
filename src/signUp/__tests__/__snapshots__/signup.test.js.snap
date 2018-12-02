@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the singup page should render the signup form 1`] = `
+<Fragment>
+  <section>
+    <div
+      className="shelter"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="column"
+        />
+        <div
+          className="column"
+        >
+          <div
+            className="form"
+          >
+            <h1
+              className="text-center nav__logo app-color"
+            >
+              Registration
+            </h1>
+            <div
+              style={
+                Object {
+                  "display": "block",
+                }
+              }
+            >
+              <Component
+                className="spinner"
+                color="#0FC86F"
+                component="div"
+                loadedClassName="loadedContent"
+                parentClassName="loader"
+                speed={1}
+              />
+            </div>
+            <div
+              className="form-card"
+            >
+              <form
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-row"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Firstname:
+                  </label>
+                  <input
+                    className="form-control"
+                    maxLength={30}
+                    minLength={3}
+                    name="firstname"
+                    onChange={[Function]}
+                    placeholder="Enter your firstname"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-row"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Lastname:
+                  </label>
+                  <input
+                    className="form-control"
+                    maxLength={30}
+                    minLength={3}
+                    name="lastname"
+                    onChange={[Function]}
+                    placeholder="Enter your lastname"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-row"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Username:
+                  </label>
+                  <input
+                    className="form-control"
+                    maxLength={30}
+                    minLength={3}
+                    name="username"
+                    onChange={[Function]}
+                    placeholder="Enter your username"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-row"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Email:
+                  </label>
+                  <input
+                    className="form-control"
+                    maxLength={30}
+                    minLength={3}
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Enter your email"
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-row"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Password
+                  </label>
+                  <input
+                    className="form-control"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Enter your password"
+                    required={true}
+                    type="password"
+                    value=""
+                  />
+                </div>
+                <button
+                  className="btn account__btn btn-block"
+                >
+                  Sign up
+                </button>
+              </form>
+            </div>
+            <p>
+              Already Have an Account Sign In
+               
+              <a
+                href="/login"
+              >
+                here
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          className="column"
+        />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      className="footer"
+    >
+      <div
+        className="navbar py-1 bg-white"
+      >
+        <div
+          className="shelter"
+        >
+          <nav
+            className="nav__items nav__items-right"
+          >
+            <div
+              className="navbar__nav"
+            >
+              <div
+                className="display"
+              >
+                <a
+                  className="dodgerblue"
+                  href="#"
+                >
+                  © Ismail Ibrahim [Andela Cycle34 2018].
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</Fragment>
+`;

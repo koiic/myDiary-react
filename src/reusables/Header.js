@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
  */
 class Header extends Component {
   render() {
-    const { loggedUserName } = this.props;
+    const { loggedUserName, auth } = this.props;
 
     return (
       <Fragment>
-        {loggedUserName ? (
+        {auth ? (
           <>
             <div className='header'>
               <div className='navbar fixed-top'>
@@ -25,18 +25,12 @@ class Header extends Component {
                   <nav className='nav__items'>
                     <div className='navbar__nav nav__underline'>
                       <Link to='/dashboard' className='nav__link '>
-                        <span /> Dashboard
-                      </Link>
-                    </div>
-                    <div className='navbar__nav nav__underline'>
-                      <Link to='/entries' className='nav__link'>
-                        <span /> Entries
-                        {/* <i class="pr-1 fa fa-book"> </i> */}
+                         Dashboard
                       </Link>
                     </div>
                     <div className='navbar__nav nav__underline'>
                       <Link to='/settings' className='nav__link'>
-                        <span /> Profile
+                        Profile
                       </Link>
                     </div>
                   </nav>
@@ -48,7 +42,6 @@ class Header extends Component {
                     </div>
                   </nav>
                   <nav className='nav__items nav__items-right'>
-                    <button className='btn btn-light'>{loggedUserName}</button>
                     <span>&nbsp; </span>
                     <Link to='/create'>
                       <button
@@ -64,6 +57,8 @@ class Header extends Component {
                         LogOut
                       </button>
                     </Link>
+                    <span>&nbsp;  &nbsp;  </span>
+                    <p> {loggedUserName}</p>
                   </nav>
                 </div>
                 {/* end container */}
