@@ -10,10 +10,10 @@ import LandingPage from '../reusables/LandingPage';
 import NotFound from '../reusables/NotFound';
 import LogOut from '../reusables/LogOut';
 import SignUpContainer from '../signUp/SignUpContainer';
-import EntryDashboard from '../Entry/entryDashBoard/DashboardContainer';
-import CreateDiaryContainer from '../Entry/createEntry/CreateDiaryContaner';
-import ViewEntry from '../Entry/viewEntry/ViewEntry';
-// import CreateEntry from '../diary/CreateDiaryContaner';
+import EntryDashboard from '../entry/entryDashBoard/DashboardContainer';
+import CreateDiaryContainer from '../entry/createEntry/CreateDiaryContaner';
+import ViewEntry from '../entry/viewEntry/ViewEntry';
+
 const history = browserHistory;
 
 const AppRouter = () => (
@@ -26,7 +26,7 @@ const AppRouter = () => (
       <Route exact path="/dashboard" component={EntryDashboard} />
       <Route exact path="/create" component={CreateDiaryContainer} />
       <Route exact path='/viewentry/:entryId' component={ViewEntry} />
-÷      <Route  component={NotFound} />
+÷      <Route component={NotFound} />
     </Switch>
   </Router>
 );
