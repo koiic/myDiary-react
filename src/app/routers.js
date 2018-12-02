@@ -10,6 +10,10 @@ import LandingPage from '../reusables/LandingPage';
 import NotFound from '../reusables/NotFound';
 import LogOut from '../reusables/LogOut';
 import SignUpContainer from '../signUp/SignUpContainer';
+import EntryDashboard from '../Entry/entryDashBoard/dashboardContainer';
+import CreateDiaryContainer from '../Entry/createEntry/CreateDiaryContaner';
+import ViewEntry from '../Entry/viewEntry/ViewEntry';
+// import CreateEntry from '../diary/CreateDiaryContaner';
 const history = browserHistory;
 
 const AppRouter = () => (
@@ -19,7 +23,10 @@ const AppRouter = () => (
       <Route exact path="/login" component={LoginContainer} />
       <Route exact path="/logout" component={LogOut} />
       <Route exact path="/signup" component={SignUpContainer} />
-      <Route  component={NotFound} />
+      <Route exact path="/dashboard" component={EntryDashboard} />
+      <Route exact path="/create" component={CreateDiaryContainer} />
+      <Route exact path='/viewentry/:entryId' component={ViewEntry} />
+÷      <Route  component={NotFound} />
     </Switch>
   </Router>
 );
