@@ -36,5 +36,5 @@ export const deleteSingleEntry = entryId => (dispatch) => {
       dispatch(deleteSingleSuccess(response.data));
       return response.data;
     })
-    .catch(error => dispatch(deleteSingleFailure(error.response.data.message)));
+    .catch(error => dispatch(deleteSingleFailure(error.response.data)));
 };

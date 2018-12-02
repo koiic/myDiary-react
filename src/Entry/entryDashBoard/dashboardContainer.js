@@ -78,7 +78,9 @@ class EntryDashBoard extends Component {
       <Fragment>
           <Header
           loggedUserName = { loggedUserName }
-          />        <section>
+          auth = { props.auth.isAuth}
+          />
+           <section>
           <div className='shelter'>
             <div className='dashboard__card mt-5'>
               <div className='orders'>

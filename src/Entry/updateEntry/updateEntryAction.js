@@ -36,5 +36,5 @@ export const updateSingleEntry = (entryObject, entryId) => (dispatch) => {
       dispatch(fetchSingleSuccess(response.data));
       return response.data;
     })
-    .catch(error => dispatch(fetchSingleFailure(error.response.data.message)));
+    .catch(error => dispatch(fetchSingleFailure(error.response.data)));
 };

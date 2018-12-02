@@ -49,7 +49,7 @@ export const fetchAllEntries = () => (dispatch) => {
     .then((response) => {
       dispatch(fetchEntriesSuccess(response.data));
     })
-    .catch(error => dispatch(fetchEntriesFailure(error.response.data.message)));
+    .catch(error => dispatch(fetchEntriesFailure(error.response.data)));
 };
 
 export const fetchTodaysEntries = () => (dispatch) => {

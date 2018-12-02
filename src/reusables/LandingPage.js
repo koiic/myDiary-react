@@ -18,12 +18,15 @@ class LandingPage extends Component {
     } else {
       loggedUserName = null;
     }
+    const auth = props.auth.isAuth;
+    console.log('user:', loggedUserName, ':', );
 
     return (
       <Fragment>
         <div className='app'>
           <Header
           loggedUserName = { loggedUserName }
+          auth = { auth }
           />
           <section className='py-5'>
             <div className='shelter'>

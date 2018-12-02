@@ -2,18 +2,20 @@
   "name": "myDiary-react",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/koiic/myDiary-react.git",
-  "author": "koiic <ibraismai1990@gmail>",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela/lotus-ah-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "lint": "eslint src/**/*.js src/**/*.jsx --fix",
     "start": "node app.js",
     "build": "babel-node ./node_modules/webpack/bin/webpack.js --config webpack.config.prod.js",
     "start:dev": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --config webpack.config.dev.js --hot --color --open",
-    "test": " NODE_ENV=test SERVER_URL=http://localhost:5000 jest",
-    "test:watch": "jest --watch",
-    "test:update": "jest -u",
-    "test:coverage": "jest --verbose --coverage"
+    "test": "jest --coverage",
+    "postinstall": "yarn build",
+    "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls"
   },
   "jest": {
     "transform": {
@@ -33,12 +35,6 @@
     },
     "setupTestFrameworkScriptFile": "<rootDir>/src/test-setup.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andela/lotus-ah-frontend.git"
-  },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/andela/lotus-ah-frontend/issues"
   },
@@ -95,6 +91,7 @@
     "classnames": "^2.2.6",
     "compression": "^1.7.3",
     "copy-webpack-plugin": "^4.6.0",
+    "coveralls": "^3.0.2",
     "dotenv": "^6.1.0",
     "dotenv-webpack": "^1.5.7",
     "eslint": "^5.9.0",

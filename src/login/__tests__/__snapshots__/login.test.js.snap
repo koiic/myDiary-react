@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the singup page should render the signup form 1`] = `
+<Fragment>
+  <div
+    className="signup"
+  >
+    <div
+      className="header"
+    >
+      <div
+        className="navbar fixed-top"
+      >
+        <div
+          className="shelter"
+        >
+          <div
+            className="navbar__nav nav__logo nav__underline"
+          >
+            <i
+              className="fa fa-book"
+            />
+            <span
+              className="highlight"
+            >
+              My
+            </span>
+            -Diarry
+          </div>
+          <div
+            className="navbar__nav navbar__nav-toggle"
+          >
+            <i
+              className="fa fa-bars"
+            />
+          </div>
+          <nav
+            className="nav__items nav__items-right"
+          >
+            <div
+              className="navbar__nav pr-0"
+            >
+              <a
+                href="signup.html"
+              >
+                <button
+                  className="btn btn-light"
+                >
+                  Create Account
+                </button>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div
+        className="shelter"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="column"
+          />
+          <div
+            className="column"
+          >
+            <div
+              className="form"
+            >
+              <h1
+                className="text-center nav__logo app-color"
+              >
+                Welcome Back
+              </h1>
+              <div
+                className="form-card"
+              >
+                <div
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <Component
+                    className="spinner"
+                    color="#0FC86F"
+                    component="div"
+                    loadedClassName="loadedContent"
+                    parentClassName="loader"
+                    speed={1}
+                  />
+                </div>
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      htmlFor="name"
+                    >
+                      Username:
+                    </label>
+                    <input
+                      className="form-control"
+                      maxLength={30}
+                      minLength={3}
+                      name="username"
+                      onChange={[Function]}
+                      placeholder="Enter your username"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      htmlFor="name"
+                    >
+                      Password
+                    </label>
+                    <input
+                      className="form-control"
+                      name="password"
+                      onChange={[Function]}
+                      placeholder="Enter your password"
+                      required={true}
+                      type="password"
+                      value=""
+                    />
+                  </div>
+                  <button
+                    className="btn account__btn btn-block"
+                  >
+                    Login
+                  </button>
+                </form>
+              </div>
+              <p>
+                Yet to Sign Up?Sign Up 
+                <a
+                  href="signup.html"
+                >
+                  here
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            className="column"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        className="footer"
+      >
+        <div
+          className="navbar py-1 bg-white"
+        >
+          <div
+            className="shelter"
+          >
+            <nav
+              className="nav__items nav__items-right"
+            >
+              <div
+                className="navbar__nav"
+              >
+                <div
+                  className="display"
+                >
+                  <a
+                    className="dodgerblue"
+                    href="#"
+                  >
+                    © Ismail Ibrahim[Andela Cycle34 2018].
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Fragment>
+`;

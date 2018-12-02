@@ -10,7 +10,7 @@ import LandingPage from '../reusables/LandingPage';
 import NotFound from '../reusables/NotFound';
 import LogOut from '../reusables/LogOut';
 import SignUpContainer from '../signUp/SignUpContainer';
-import EntryDashboard from '../Entry/entryDashBoard/dashboardContainer';
+import EntryDashboard from '../Entry/entryDashBoard/DashboardContainer';
 import CreateDiaryContainer from '../Entry/createEntry/CreateDiaryContaner';
 import ViewEntry from '../Entry/viewEntry/ViewEntry';
 // import CreateEntry from '../diary/CreateDiaryContaner';

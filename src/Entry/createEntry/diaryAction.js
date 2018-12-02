@@ -38,6 +38,6 @@ export const createNewEntry = entryObject => (dispatch) => {
       dispatch(publishSuccess(response.data));
     })
     .catch((error) => {
-      dispatch(publishFailure(error.response.data.message));
+      dispatch(publishFailure(error.response.data));
     });
 };
